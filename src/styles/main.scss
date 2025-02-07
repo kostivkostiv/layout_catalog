@@ -16,7 +16,6 @@ a {
 
 .main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   justify-content: center;
   gap: 46px 48px;
 
