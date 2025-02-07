@@ -1,6 +1,4 @@
-:root {
-  --main-color: #00acdc;
-}
+@import "./variables";
 
 html {
   font-family: Roboto, Raleway, sans-serif;
@@ -76,7 +74,7 @@ body {
 
 .is-active {
   position: relative;
-  color: var(--main-color);
+  color: $main-blue-accent-color;
 
   &::after {
     content: '';
@@ -85,15 +83,7 @@ body {
     width: 37px;
     height: 4px;
     flex-shrink: 0;
-    background-color: var(--main-color);
+    background-color: $main-blue-accent-color;
     border-radius: 8px;
   }
-}
-
-[data-qa='hover'] {
-  color: #000;
-}
-
-[data-qa='hover']:hover {
-  color: var(--main-color);
 }
